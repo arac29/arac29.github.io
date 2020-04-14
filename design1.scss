@@ -1,0 +1,45 @@
+$marron: #5d5b6a;
+$green: #758184;
+$cream: #cfb495;
+$rosa: #f5cdaa;
+
+%inherit{
+    font-size: 3em;
+}
+
+.music{
+    
+    background-color: $cream;
+}
+aside{
+    a{
+        color:black;
+    }
+}
+table{
+
+    #planet{
+        color:$green; 
+    }
+    #glyph{
+        height: 100%;
+    }
+    td{
+        background-color:lightgoldenrodyellow;
+        
+        width:20%;
+    }
+    border:solid $marron;
+}
+.test{
+    @extend %inherit;
+    @media screen and(min-width:500px){
+        background-color: $marron ;
+        color: red;
+    }
+    @media screen and (max-width:500px){
+        
+        background-color:$rosa;
+        color:$green;
+    }
+}
